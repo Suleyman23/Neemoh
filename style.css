@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* COLORS */
+
+.primary-color {
+    background-color: #000000;
+}
+
+
+/* HEIGHTS */
+
+.height-1 {
+    height: 35rem;
+}
+
+.height-3 {
+    height: 5rem
+}
+
+.height-2 {
+    height: 43rem;
+}
+
+/* HEIGHTS MEDIA QUERY*/
+
+/* HEIGHT-1 */
+
+@media only screen and (max-width: 768px) {
+
+    .height-1 {
+        height: 24rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .height-1 {
+        height: 15rem;
+    }
+}
+
+/* WIDTH */
+
+.width-1 {
+   
+    
+}
+
+/* VERTICAL */
+
+.vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+/* READ MORE ANIMATION*/
+
+.read-more {
+    transition: all ease-in-out 1s;
+    font-family: 'Monoton', cursive;
+    animation-name: read-more;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes read-more {
+    0% {
+
+        opacity: 0;
+    }
+
+    50% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        opacity: 0;
+    }
+}
+
+.read-more:hover {
+    color: greenyellow;
+}
+
+/* MEDIA QUERIES */
+
+
+/* FOR DISPLAY-2 TAGS */
+
+.display-2 {
+    font-size: 5.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .display-2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .display-2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* FOR DISPLAY-4 TAGS */
+
+.display-4 {
+    font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .display-4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .display-4 {
+        font-size: 1rem;
+    }
+}
+
+/* SOCIAL-ICONS */
+
+.icon-3d {
+
+    -webkit-animation: icon3d 200ms 10;
+    animation: icon3d 200ms 10;
+    color: #fff;
+}
+
+.icon-3d:hover {
+    -webkit-animation: icon3d 200ms infinite;
+    animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+    0% {
+        text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+    }
+
+    25% {
+        text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+    }
+
+    50% {
+        text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+    }
+
+    75% {
+        text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+    }
+
+    100% {
+        text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+    }
+}
+
+/* ABOUT ME*/
+
+.about-me {
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.about-me a {
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+.about-me a:hover,
+.ui:hover,
+.design:hover,
+.read-more:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* YELLOW NEMMOH LOGO */
+
+.second-color {
+    background: #222;
+    background-image: repeating-linear-gradient(to bottom, transparent 7px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 13px, transparent 13px);
+}
+
+.text-effect {
+    color: #fff6a9;
+    font-family: 'Sacramento', cursive;
+    font-size: 120px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px auto 0;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    position: relative;
+    animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        color: #fff6a9;
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .text-effect {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .text-effect {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .text-effect {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .text-effect {
+        font-size: 45px;
+    }
+}
+
